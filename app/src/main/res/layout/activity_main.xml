@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ECEDF1"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/gco"
+        android:layout_marginTop="50dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo"
+        android:id="@+id/account"
+        android:textColorHint="#CACBCC"
+        android:hint="QQ号/手机号/邮箱"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/et_drawable"
+        android:layout_height="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/account"
+        android:id="@+id/password"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:background="@drawable/et_drawable"
+        android:textSize="15sp"
+        android:textColorHint="#CACBCC"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_select"
+        android:id="@+id/login"
+        android:text="登  录"
+        android:textSize="18sp"
+        android:textColor="#E2F6FD"
+        android:layout_marginRight="10dp"
+        android:layout_height="45dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:checked="true"
+        android:button="@drawable/check_select"
+        android:id="@+id/read"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="我已阅读并同意"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#848484"
+        android:id="@+id/readStr"
+        android:layout_toRightOf="@+id/read"
+        android:layout_alignBottom="@+id/read"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="服务条款"
+        android:textSize="15sp"
+        android:textColor="#1BB7F0"
+        android:layout_toRightOf="@+id/readStr"
+        android:layout_alignBottom="@+id/readStr"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无法登录?"
+        android:id="@+id/noLogin"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#1BB7F0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新用户注册"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/noLogin"
+        android:textColor="#1BB7F0"/>
+
+
+
+</RelativeLayout>
